@@ -1,7 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #bfe2c6;
+    margin: 0;
+    padding: 40px;
     text-align: center;
-    padding-top: 40px;
 }
 
 input, button {
