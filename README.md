@@ -1,5 +1,22 @@
 # Flask Hello App
 
+## User Guide
+
+Figure 1 below shows how the [Flask Hello App](https://if-combined-flask-start.onrender.com/) behaves when a user enters their name into the input box and clicks Submit.
+
+**Figure 1**
+![User Docs Hello App](hello-flask-user-docs.png)
+
+How It Works
+
+You type your name into the box.
+
+The browser sends your input to the Flask backend.
+
+Flask processes the name and returns a new version of the page containing your personalised message.
+
+The same page layout is preserved, with only the greeting added.
+
 This repository demonstrates how to create a very basic [Flask](https://flask.palletsprojects.com/en/stable/) application and deploy it for free on [render.com](https://render.com/docs). 
 
 Flask is a Python framework used for building web applications. It includes its own development server; this is not optional, and Flask apps cannot be deployed on static-only platforms such as GitHub Pages.
