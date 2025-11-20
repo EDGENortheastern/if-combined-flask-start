@@ -7,7 +7,7 @@ def home():
     name = None
     if request.method == 'POST':
         name = request.form.get('username')
-    return render_template('index.html', name=name)
+    return render_template('index.html', name=name.title())
 
 if __name__ == '__main__':
     app.run(debug=True)
