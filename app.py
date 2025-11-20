@@ -7,7 +7,12 @@ def home():
     name = None
     if request.method == 'POST':
         name = request.form.get('username')
-    return render_template('index.html', name=name.title())
+
+    # Fix: only apply .title() when name is not None
+    if name:
+        name = name.title()
+
+    return render_template('index.html', name=name)
 
 if __name__ == '__main__':
     app.run(debug=True)
